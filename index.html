@@ -31,7 +31,7 @@
         }
 
         .cover {
-            background: url('/coverimage.png') center/cover no-repeat;
+            background: url('coverimage.png') center/cover no-repeat;
             height: 450px;
             display: flex;
             flex-direction: column;
@@ -96,6 +96,11 @@
         a.social {
             margin: 0 0.5rem;
         }
+        .video-container {
+          display: flex;
+          justify-content: center;
+          margin: 2rem 0;
+        }
     </style>
 </head>
 
@@ -106,7 +111,6 @@
         <nav>
             <a href="#features">Features</a>
             <a href="#about">About</a>
-            <a href="https://github.com/YOUR_USERNAME/mira-app" target="_blank">GitHub</a>
         </nav>
     </header>
 
@@ -120,23 +124,26 @@
         <h2>Key Features</h2>
         <div class="features">
             <div class="feature">
-                <img src="/eyetracker.png" alt="Eye Tracking" />
+                <img src="eyetracker.png" alt="Eye Tracking" />
                 <h3>WebGazer.js Eye Tracking</h3>
                 <p>Real-time, in-browser eye movement tracking calibrated for clinical-grade visual tests.</p>
             </div>
             <div class="feature">
-                <img src="/calibration.png" alt="Calibration" />
+                <img src="calibration.png" alt="Calibration" />
                 <h3>Custom Calibration</h3>
                 <p>9-point per-eye calibration saved to user profiles to speed up clinical use.</p>
             </div>
             <div class="feature">
-                <img src="/results.png" alt="Results" />
+                <img src="results.png" alt="Results" />
                 <h3>Session & Result Management</h3>
                 <p>Track, store, and export patient session data securely — with backend PDF support.</p>
             </div>
         </div>
     </section>
-    <iframe width="864" height="486" src="https://www.youtube.com/embed/_lZflg5-ZX4" title="Demo Project Mira - Juillet 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-container">
+      <iframe width="864" height="486" src="https://www.youtube.com/embed/_lZflg5-ZX4" title="Demo Project Mira - Juillet 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
     <section id="about">
         <h2>About the Project</h2>
         <p>
