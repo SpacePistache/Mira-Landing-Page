@@ -2,67 +2,168 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mira App</title>
   <style>
     body {
-      background-color: #f8fafc;
-      color: #0f172a;
-      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #0e7490;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    .cover {
+      background: url('https://via.placeholder.com/1600x500?text=Mira+App') center/cover no-repeat;
+      height: 400px;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
-      margin: 0;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 4px black;
     }
-    h1 {
+
+    .cover h1 {
       font-size: 3rem;
-      margin-bottom: 1rem;
-      color: #0369a1;
     }
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      text-align: center;
-      margin-bottom: 2rem;
+
+    .cover p {
+      font-size: 1.25rem;
     }
-    .links {
-      display: flex;
-      gap: 1.5rem;
-    }
+
     .btn {
-      background-color: #0369a1;
+      background-color: #0e7490;
       color: white;
       padding: 0.75rem 1.5rem;
-      border-radius: 8px;
+      border: none;
+      border-radius: 5px;
       text-decoration: none;
-      font-weight: 500;
-      transition: background-color 0.2s ease;
+      margin-top: 1rem;
     }
-    .btn:hover {
-      background-color: #0e7490;
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
     }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .feature {
+      flex: 1 1 250px;
+      background-color: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .feature img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
     footer {
-      position: absolute;
-      bottom: 1rem;
+      text-align: center;
+      padding: 2rem;
       font-size: 0.9rem;
-      color: #64748b;
+      color: #777;
+    }
+
+    a.social {
+      margin: 0 0.5rem;
     }
   </style>
 </head>
 <body>
-  <h1>Mira App</h1>
-  <p>A modern web-based eye tracking application for visual acuity testing – designed for preverbal children and individuals with communication difficulties.</p>
-  
-  <div class="links">
-    <a href="https://github.com/your-username/mira-app" class="btn">View Code</a>
-    <a href="https://www.youtube.com/watch?v=_lZflg5-ZX4&ab_channel=Fr%C3%A9d%C3%A9ricIglesias" class="btn">Live Demo</a>
-    <a href="MIRA_Final_README.md" class="btn">📄 ReadMe</a>
+
+  <header>
+    <strong>Mira App</strong>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="https://github.com/YOUR_USERNAME/mira-app" target="_blank">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="cover">
+    <h1>Mira App</h1>
+    <p>Accessible, eye-tracking-based vision testing — no words required.</p>
+    <a class="btn" href="https://YOUR_DEPLOYED_LINK" target="_blank">Launch App</a>
   </div>
 
+  <section id="features">
+    <h2>✨ Key Features</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://via.placeholder.com/400x200?text=Eye+Tracking" alt="Eye Tracking" />
+        <h3>WebGazer.js Eye Tracking</h3>
+        <p>Real-time, in-browser eye movement tracking calibrated for clinical-grade visual tests.</p>
+      </div>
+      <div class="feature">
+        <img src="https://via.placeholder.com/400x200?text=Calibration" alt="Calibration" />
+        <h3>Custom Calibration</h3>
+        <p>9-point per-eye calibration saved to user profiles to speed up clinical use.</p>
+      </div>
+      <div class="feature">
+        <img src="https://via.placeholder.com/400x200?text=Results" alt="Results" />
+        <h3>Session & Result Management</h3>
+        <p>Track, store, and export patient session data securely — with backend PDF support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>👁️ About the Project</h2>
+    <p>
+      Project Mira was inspired by the need for objective, non-verbal visual testing — especially for preverbal children or individuals with communication challenges.
+      Rather than relying on patient feedback, Mira uses direct eye movement analysis to perform accurate visual acuity tests via the web.
+    </p>
+    <p>
+      Built as part of the Holberton School Portfolio Project. See full source on
+      <a href="https://github.com/YOUR_USERNAME/mira-app" target="_blank">GitHub</a>.
+    </p>
+
+    <h3>👤 Team</h3>
+    <ul>
+      <li>
+        <strong>Frédéric Iglesias Montero</strong> —
+        <a class="social" href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a> |
+        <a class="social" href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a> |
+        <a class="social" href="https://twitter.com/YOUR_TWITTER" target="_blank">Twitter</a>
+      </li>
+      <li>
+        <strong>Luke Holley-Boutillier</strong> —
+        <a class="social" href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a> |
+        <a class="social" href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a> |
+        <a class="social" href="https://twitter.com/YOUR_TWITTER" target="_blank">Twitter</a>
+      </li>
+    </ul>
+  </section>
+
   <footer>
-    © 2025 Project Mira – Built with love and coffee by Frédéric & Luke
+    © 2025 Mira App · Holberton School Project
   </footer>
+
 </body>
 </html>
