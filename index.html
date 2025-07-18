@@ -2,34 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mira App</title>
   <style>
     body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 5rem 1rem;
-      background: #f8fafc;
+      background-color: #f8fafc;
       color: #0f172a;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
     }
     h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
       color: #0369a1;
-      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .links {
+      display: flex;
+      gap: 1.5rem;
     }
     .btn {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      background: #0369a1;
+      background-color: #0369a1;
       color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 0.5rem;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+    .btn:hover {
+      background-color: #0e7490;
+    }
+    footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.9rem;
+      color: #64748b;
     }
   </style>
 </head>
 <body>
-  <h1>👁️ Mira App</h1>
-  <p>Visual acuity testing made smarter, faster, and accessible.</p>
-  <a href="https://github.com/your-username/mira-app" class="btn">View Project</a>
+  <h1>Mira App</h1>
+  <p>A modern web-based eye tracking application for visual acuity testing – designed for preverbal children and individuals with communication difficulties.</p>
+  
+  <div class="links">
+    <a href="https://github.com/your-username/mira-app" class="btn">🔗 View Code</a>
+    <a href="https://your-deployed-link.com" class="btn">🚀 Live Demo</a>
+    <a href="MIRA_Final_README.md" class="btn">📄 ReadMe</a>
+  </div>
+
+  <footer>
+    © 2025 Project Mira – Built with love and coffee by Frédéric & Luke
+  </footer>
 </body>
 </html>
